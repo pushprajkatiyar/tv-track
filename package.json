@@ -1,0 +1,63 @@
+{
+  "name": "angular2-tv-tracker",
+  "private": true,
+  "description": "Angular 2 TV tracker",
+  "repository": {
+    "url": "git@github.com:mattlewis92/angular2-tv-tracker.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@angularclass/idle-preload": "^1.0.4",
+    "@ngtools/webpack": "^1.3.0",
+    "angular-async-cache": "^1.0.0",
+    "angular-calendar": "^0.19.0",
+    "angular-confirmation-popover": "^3.0.0",
+    "bootstrap": "4.0.0-alpha.6",
+    "core-js": "^2.4.1",
+    "font-awesome": "^4.6.3",
+    "lodash.get": "^4.4.2",
+    "randomcolor": "^0.5.2",
+    "rxjs": "^5.0.1",
+    "tinycolor2": "^1.4.1",
+    "tslib": "^1.5.0",
+    "zone.js": "^0.8.0"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^4.0.0",
+    "@types/node": "^8.0.0",
+    "@types/tinycolor2": "^1.1.0",
+    "angular-router-loader": "^0.6.0",
+    "codelyzer": "^3.0.1",
+    "css-loader": "^0.28.3",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.1",
+    "fork-ts-checker-webpack-plugin": "^0.2.2",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^4.5.1",
+    "offline-plugin": "^4.5.2",
+    "sass-loader": "^6.0.1",
+    "style-loader": "^0.18.1",
+    "ts-loader": "^2.1.0",
+    "ts-node": "^3.0.6",
+    "tslint": "^5.3.2",
+    "tslint-loader": "^3.3.0",
+    "typescript": "~2.4.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^3.0.0",
+    "webpack-config-utils": "^2.3.0",
+    "webpack-dev-server": "^2.2.0"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --env=development --progress --open",
+    "build": "webpack --progress --env=production",
+    "gh-pages": "git checkout gh-pages && git merge master --no-edit && rm -rf *.js *.css *.map *.html && npm run build && git add . && git commit -m 'Build' && git push && git checkout master"
+  }
+}

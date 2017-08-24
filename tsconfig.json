@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["ES5", "dom", "es2015"],
+    "outDir": "tsc",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
